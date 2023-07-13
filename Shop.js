@@ -1,4 +1,4 @@
-import{r as d}from"./index.ed373d49.js";const x="e59898ef-1fb07616-a2649be3-156fc871",h={lang:"es"},f="https://fortniteapi.io/v2/shop?".concat(new URLSearchParams(h).toString()),m=async()=>{try{return await(await globalThis.fetch(f,{headers:{Authorization:x}})).json()}catch({message:t}){return{error:t}}};var l={exports:{}},a={};/**
+import{r as d}from"./index.js";const x="e59898ef-1fb07616-a2649be3-156fc871",h={lang:"es"},f="https://fortniteapi.io/v2/shop?".concat(new URLSearchParams(h).toString()),m=async()=>{try{return await(await globalThis.fetch(f,{headers:{Authorization:x}})).json()}catch({message:t}){return{error:t}}};var l={exports:{}},a={};/**
  * @license React
  * react-jsx-runtime.production.min.js
  *

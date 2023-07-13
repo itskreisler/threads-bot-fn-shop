@@ -1,4 +1,4 @@
-import{r as yn}from"./index.ed373d49.js";var No={exports:{}},ve={},zo={exports:{}},Po={};/**
+import{r as yn}from"./index.js";var No={exports:{}},ve={},zo={exports:{}},Po={};/**
  * @license React
  * scheduler.production.min.js
  *
