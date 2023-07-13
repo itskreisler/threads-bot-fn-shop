@@ -1,0 +1,39 @@
+---
+export interface Props {
+	mainId: string;
+    displayName: string;
+    displayDescription: string;
+    displayAssets: {
+        full_background: string;
+    }[];
+    price: number;
+}
+const {
+	mainId: id,
+	displayName: name,
+	displayDescription: description,
+	displayAssets: [{ full_background: fulBackground }],
+	price
+} = Astro.props
+const { regularPrice, finalPrice } = price;
+---
+<div class='card'>
+	<div class='card-image'>
+		<img src={fulBackground} alt={name}/>
+
+	</div>
+	<div class='card-content'>
+		<span class='card-title'>{name}</span>
+		<p>{description}</p>
+	</div>
+	<div class='card-action action-align'>
+		<button class='btn indigo darken-4'>Buy</button>
+		{
+			regularPrice === finalPrice
+				? <span class='text-[1.8rem]' style={{ fontSize: '1.8rem', textAlign: 'right' }}>{finalPrice} $</span>
+				: <div class='fullprice'><span style={{ fontSize: '1.4rem', marginLeft: '10%', textDecoration: 'line-through', color: 'red' }}>{regularPrice} $</span>
+					<span style={{ fontSize: '1.8rem' }}>{finalPrice} $</span></div>
+		}
+
+	</div>
+</div>
