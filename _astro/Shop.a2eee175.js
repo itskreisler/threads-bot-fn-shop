@@ -1,0 +1,9 @@
+import{r as d}from"./index.ed373d49.js";const x="e59898ef-1fb07616-a2649be3-156fc871",h={lang:"es"},f="https://fortniteapi.io/v2/shop?".concat(new URLSearchParams(h).toString()),m=async()=>{try{return await(await globalThis.fetch(f,{headers:{Authorization:x}})).json()}catch({message:t}){return{error:t}}};var l={exports:{}},a={};/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var _=d,u=Symbol.for("react.element"),v=Symbol.for("react.fragment"),y=Object.prototype.hasOwnProperty,j=_.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,g={key:!0,ref:!0,__self:!0,__source:!0};function p(t,e,n){var s,o={},i=null,c=null;n!==void 0&&(i=""+n),e.key!==void 0&&(i=""+e.key),e.ref!==void 0&&(c=e.ref);for(s in e)y.call(e,s)&&!g.hasOwnProperty(s)&&(o[s]=e[s]);if(t&&t.defaultProps)for(s in e=t.defaultProps,e)o[s]===void 0&&(o[s]=e[s]);return{$$typeof:u,type:t,key:i,ref:c,props:o,_owner:j.current}}a.Fragment=v;a.jsx=p;a.jsxs=p;l.exports=a;var r=l.exports;const{shop:w}=await m(),b=()=>r.jsx(r.Fragment,{children:w.map(({mainId:t,displayAssets:[{full_background:e}],displayName:n,price:{regularPrice:s,finalPrice:o}})=>r.jsxs("div",{className:"overflow-hidden rounded-lg bg-white",children:[r.jsx("img",{alt:n,loading:"lazy",src:e}),r.jsxs("div",{className:"p-2 divide-y-[1px] divide-gray-500/60 flex flex-col",children:[r.jsx("span",{className:"font-bold",children:n}),s===o?r.jsxs("span",{className:"text-[1.8rem]",children:[o," $"]}):r.jsxs("div",{children:[r.jsxs("span",{className:"text-[1.4rem] line-through text-red-500",children:[s," $"]}),r.jsxs("span",{className:"text-[1.8rem]",children:[o," $"]})]})]})]},t))});export{b as default};
